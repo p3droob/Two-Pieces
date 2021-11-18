@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Two Pieces">
+    <title>Two Pieces - Tripulação</title>
+    <link rel="shortcut icon" href="/flag.png" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+  <%- include('../partials/menu') %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js" integrity="sha512-zN6KYOtONNTOGXz0RkWX2EpavN9VdIs+2w+To+fhciFv83YA9maUpi2lzZWrOfKXdFIZZomWufBznkyHi3a8oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <h1 class="crewTitle">Tripulação <%= crew.name %></h1>
+  <div class="personalizedCrew">
+  <img style="max-width: 20em; padding: 0.5em; border-radius: 2em; max-height: 15em;
+  border-style: solid; margin-bottom: 2em;"
+  src="<%= crew.banner || '' %>"
+  />
+  <crew>Capitão: <%= cliente.users.cache.get(crew.owner) ? cliente.users.cache.get(crew.owner).tag : `Usuário não identificado (${crew.owner})` %>
+  <br>
+  Quantidade de membros: <%= crew.members.length %></crew>
+  <select id="crewUsers">
+  <option>Membros</option>
+  <% crew.members.forEach(member => { %>
+  <option><%= cliente.users.cache.get(member) ? cliente.users.cache.get(member).username : member %></option>
+  <% }) %>
+  </select>
+  </div>
+  <script src="/index.js"></script>
+  </body>
+</html>

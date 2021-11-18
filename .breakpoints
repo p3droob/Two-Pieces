@@ -1,0 +1,36 @@
+{
+  "files": {
+    "public/index.js": [
+      {
+        "id": "62060aeb-4eaa-4338-80dd-cae8c2ccabf8",
+        "line": 1,
+        "version": 1703,
+        "index": 20
+      }
+    ],
+    "src/built/comandos/onepiece/loja.js": [
+      {
+        "id": "b78a8efa-b77e-4c0e-8540-5e8b8ba2c297",
+        "line": 50,
+        "version": 1539,
+        "index": 3167
+      }
+    ],
+    "src/built/slashes/onepiece/upgrades.js": [
+      {
+        "id": "7cc1fed6-b042-49ec-ac60-3230805e842a",
+        "line": 75,
+        "version": 3519,
+        "index": 3642
+      }
+    ],
+    "views/partials/menu.ejs": [
+      {
+        "id": "6512f5f4-d1b3-4866-901e-630660e22805",
+        "line": 8,
+        "version": 524,
+        "index": 246
+      }
+    ]
+  }
+}

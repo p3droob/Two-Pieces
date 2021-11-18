@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5em;
+  background-color: #17b2ad;/*#a5a5a5*/
+  text-decoration: none;
+}
+
+h1.crewTitle {
+  margin: 1em;
+  text-align: center;
+  color: white;
+}
+
+div.crews {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.crew {
+  width: 15em;
+  height: 15em;
+  max-width: 15em;
+  max-height: 15em;
+  margin: 1.5em;
+  padding: 1.5em;
+  color: #caf107;
+  background-color: #252725; 
+  border-radius: 2em;
+}
+
+div.personalizedCrew {
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  padding: 2em;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: #094a5a;
+  color: white;
+}
+
+select#crewUsers {
+  color: yellowgreen;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.menuGroup {
+  display: flex;
+  flex-direction: row;
+  background-color: #094a5a;
+}
+
+title {
+  color: yellow;
+  width: 7em;
+  height: 4em;
+  max-width: 10em;
+  max-height: 4em;
+  padding-top: 1em;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+  /*background-color: #166464;
+  border-radius: 0em 0em 15px 15px*/
+}
+
+menu {
+  color: white;
+  cursor: pointer;
+  width: 10em;
+  height: 5em;
+  max-width: 10em;
+  max-height: 4em;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  background-color: #343636;
+  border-radius: 0em 0em 15px 15px
+}
+
+img#avatar {
+  border-radius: 5em;
+  max-width: 3em;
+  max-height: 3em;
+}
+
+menu.login {
+ background-color: #caf107;
+ color: black;
+ max-width: 10em;
+}
+menu:hover {
+  max-height: 5em;
+  padding-top: 2em;
+  background-color: #c4c6c9;
+}
+
+a {
+  text-decoration: none;
+}
